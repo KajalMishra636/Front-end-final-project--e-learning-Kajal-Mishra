@@ -1,108 +1,88 @@
-# 🌐 E-Learning Website 🎓
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=34&pause=1000&color=36BCF7&center=true&vCenter=true&width=950&lines=E-Learning+Platform+Frontend;Final+Year+Front-End+Project;Built+by+Kajal+Mishra" alt="Typewriter Heading" />
+</p>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/KajalMishra636/elearning-website?color=green&style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/KajalMishra636/elearning-website?style=flat-square)
-![GitHub forks](https://img.shields.io/github/forks/KajalMishra636/elearning-website?style=flat-square)
-![License](https://img.shields.io/github/license/KajalMishra636/elearning-website?style=flat-square)
-
-> A modern, responsive, and interactive 🌟 **E-Learning Platform** built using **HTML, CSS, and JavaScript**. Offers users a seamless learning experience with category filters, animated cards, modals, and responsive design.
-
----
-
-## 🚀 Live Demo
-
-🌍 [Click here to view the live website](http://127.0.0.1:5500/elearning/tutorial.html)
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Framework-ReactJS-61DAFB?style=flat-square" />
+  <img src="https://img.shields.io/badge/UI-Bootstrap%20%7C%20CustomCSS-purple?style=flat-square" />
+  <img src="https://img.shields.io/badge/Project-Type%3A%20Final%20Year-success?style=flat-square" />
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square" />
+</p>
 
 ---
 
-## ✨ Features
+## 📘 Front-End Final Project – E-Learning Platform
 
-- 🎓 Course listing with thumbnails and filters
-- 🔍 Category filter (Web Dev, AI, Data Science, etc.)
-- 🌙 Dark/Light Mode toggle
-- 🔐 Login & Register modals with form validation
-- 🔎 Search bar to find content
-- 🧠 Scroll animations and typing effects
-- 📱 Fully responsive on mobile, tablet, and desktop
-- 💫 Modular code with smooth transitions and hover effects
+This project is a **modern, responsive, and interactive E-Learning Platform frontend**, developed as a **final academic project** using **HTML, CSS, JavaScript, Bootstrap, jQuery, and ReactJS**.
+
+The goal of this project is to demonstrate **real-world front-end skills**, clean UI design, modular code structure, and scalable architecture suitable for a production-level learning platform.
 
 ---
 
-## 🧰 Tech Stack
+## 🎯 Project Objectives
 
-- **HTML5**  
-- **CSS3 (Flexbox, Grid)**  
-- **JavaScript (DOM, Events, Validation)**  
-- **AOS.js**, **Typed.js** *(optional)*
-
----
-
-## 🖼️ Screenshots
-
-### 🏠 Homepage
-![Homepage](./screenshots/homepage.png)
-
-### 🧾 Filtered Courses View
-![Filtered Courses](./screenshots/filtered-courses.png)
-
-### 🔐 Login Modal
-![Login Modal](./screenshots/login-modal.png)
-
-### 📱 Responsive Mobile View
-![Mobile View](./screenshots/mobile-view.png)
-
-> Make sure you add these images in a `/screenshots/` folder.
+- Build a **professional e-learning website UI**
+- Implement **modern UX patterns** used in real platforms
+- Showcase **React component architecture**
+- Practice **frontend performance & responsiveness**
+- Create a project suitable for **placements, internships, and freelancing**
 
 ---
 
-## 📁 Folder Structure
+## ✨ Core Features
 
-E-learning-website/
-├── index.html
-├── style.css
-├── script.js
-├── /images
-├── /screenshots
-└── /assets
+- 🎓 **Course Listing System**
+  - Category-based courses
+  - Card-based responsive layout
+  - Filters & search (frontend logic)
 
+- 🤖 **AI Learning Section (UI)**
+  - AI course showcase
+  - AI chatbox interface (frontend only)
+  - Modern AI-style layout
 
+- 🔐 **Authentication UI**
+  - Login & Register modals/forms
+  - Client-side validation
+  - Clean UX for users
+
+- 🌗 **Dark / Light Mode**
+  - Toggle theme
+  - Saved preference using localStorage
+
+- 📱 **Fully Responsive Design**
+  - Mobile
+  - Tablet
+  - Desktop
+
+- ⚡ **Interactive UI**
+  - Animations & transitions
+  - Hover effects
+  - Smooth scrolling
+
+- 🧩 **Reusable React Components**
+  - Navbar
+  - Course Cards
+  - Modals
+  - Footer
+  - Sections
 
 ---
 
-## 💡 How to Use Locally
+## 🛠️ Tech Stack
 
-```bash
-# Clone the repository
-git clone https://github.com/KajalMishra636/elearning-website.git
-
-# Navigate to the project folder
-cd elearning-website
-
-# Open index.html in your browser
-
-
+| Technology | Usage |
+|----------|------|
+| HTML5 | Structure |
+| CSS3 | Styling & Layout |
+| JavaScript (ES6) | Logic & Interactivity |
+| ReactJS | Component-based UI |
+| Bootstrap | Responsive Grid |
+| jQuery | DOM Utilities |
+| Font Awesome | Icons |
 
 ---
 
-## 💡 How to Use Locally
-
-```bash
-# Clone the repository
-git clone https://github.com/KajalMishra636/elearning-website.git
-
-# Navigate to the project folder
-cd elearning-website
-
-# Open index.html in your browser
-📬 Contributing
-Contributions are welcome!
-Feel free to fork this repo, improve UI, add features, and raise pull requests.
-
-📜 License
-This project is licensed under the MIT License.
-
-👤 Author
-Kajal Mishra
-🌐 GitHub Profile
-📧 your-email@example.com <!-- Replace with your real email if you'd like -->
+## 🗂️ Project Structure
 
