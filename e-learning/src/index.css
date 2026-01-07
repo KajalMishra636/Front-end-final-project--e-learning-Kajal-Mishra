@@ -1,0 +1,66 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* DARK THEME (DEFAULT) */
+:root {
+  --dark-bg: #0a0e27;
+  --dark-card: rgba(20, 24, 60, 0.85);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5f5;
+
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+
+  --accent: #38bdf8;
+  --gradient: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* LIGHT THEME */
+body[data-theme="light"] {
+  --dark-bg: #f8fafc;
+  --dark-card: rgba(255, 255, 255, 0.95);
+
+  --text-primary: #020617;
+  --text-secondary: #475569;
+
+  --glass-bg: rgba(0, 0, 0, 0.05);
+  --glass-border: rgba(0, 0, 0, 0.12);
+
+  --accent: #2563eb;
+  --gradient: linear-gradient(135deg, #2563eb, #38bdf8);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--dark-bg);
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
