@@ -1,0 +1,289 @@
+/* ================================
+   NAVBAR (THEME SAFE)
+================================ */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background: color-mix(in srgb, var(--dark-bg) 85%, transparent);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--glass-border);
+  z-index: 1000;
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+[data-theme="light"] .navbar {
+  background: rgba(255, 255, 255, 0.75);
+}
+.navbar.scrolled {
+  background: var(--dark-bg);
+  padding: 0.75rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ================================
+   LAYOUT CONTAINER
+================================ */
+.nav-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================================
+   LOGO (SINGLE SOURCE)
+================================ */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  height: 55px;
+  border-radius: 10px 100px / 120px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1.45rem;
+  font-weight: 800;
+  background: var(--gradient, var(--primary-gradient));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.btn-signup {
+  background: var(--accent-gradient);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-signup:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+}
+
+/* ================================
+   DESKTOP NAVIGATION
+================================ */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-primary);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: color 0.25s ease;
+}
+
+.nav-item:hover .nav-link {
+  color: var(--accent);
+}
+
+/* ================================
+   DROPDOWN ICON
+================================ */
+.dropdown-icon {
+  font-size: 0.85rem;
+  transition: transform 0.25s ease;
+}
+
+.nav-item:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* ================================
+   MEGA MENU
+================================ */
+.mega-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  width: 500px;
+  background: var(--dark-card);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.nav-item:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/*  ================================
+          Toggle Theme              
+    ================================
+*/
+.theme-toggle {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  padding: 8px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.theme-toggle svg {
+  transition: transform 0.4s ease;
+}
+
+[data-theme="light"] .theme-toggle svg {
+  transform: rotate(180deg);
+}
+
+
+/* ================================
+   MEGA MENU CONTENT
+================================ */
+.mega-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.mega-menu-grid a {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.mega-menu-grid a:hover {
+  background: var(--glass-bg);
+  color: var(--text-primary);
+  transform: translateX(6px);
+}
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+.nav-auth {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-login {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.btn-login:hover {
+  background: var(--glass-bg);
+  border-color: var(--accent);
+}
+
+.btn-signup {
+  background: var(--gradient, var(--primary-gradient));
+  border: none;
+  color: var(--text-primary);
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-signup:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+/* ================================
+   MOBILE
+================================ */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 968px) {
+  .nav-menu,
+  .nav-auth {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: var(--dark-card);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid var(--glass-border);
+    padding: 2rem;
+  }
+
+  .mobile-nav-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  .mobile-submenu a {
+    display: block;
+    padding: 0.6rem 0 0.6rem 1rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
+
+  .mobile-submenu a:hover {
+    color: var(--accent);
+  }
+
+  .mobile-auth {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
